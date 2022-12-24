@@ -1,1 +1,1 @@
-# -domain-model-csharp-azure-digital-twins-iot-hub-framework
+# Domain Model C# framework for Azure Digital Twins and Azure IoT Hub
