@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:A;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "A",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "A_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,PR1_A,PR4_A"
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Number",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "current_state",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "MathProperty",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "A_1_Update",
+      "displayName": "A1:Update",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "name",
+            "schema": "string"
+          },
+          {
+            "name": "number",
+            "schema": "integer"
+          },
+          {
+            "name": "A_1_Update_occurred",
+            "description": "The timestamp when this telemetry occurres",
+            "schema": "dateTime"
+          }
+        ]
+      }
+    }
+  ]
+}

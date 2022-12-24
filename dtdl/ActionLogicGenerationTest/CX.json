@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:CX;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "CX",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "S_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R6"
+    },
+    {
+      "@type": "Property",
+      "name": "C_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@R7"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R6FromCX;1",
+      "name": "R6FromCX",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:S;1"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R7_IsTargetOf_C;1",
+      "name": "R7_IsTargetOf_C",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:C;1"
+    }
+  ]
+}

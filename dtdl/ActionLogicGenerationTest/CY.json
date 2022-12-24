@@ -1,0 +1,29 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:CY;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "CY",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "S_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R6"
+    },
+    {
+      "@type": "Property",
+      "name": "Price",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R6FromCY;1",
+      "name": "R6FromCY",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:S;1"
+    }
+  ]
+}

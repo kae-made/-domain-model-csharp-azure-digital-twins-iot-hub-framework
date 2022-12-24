@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:OI;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "OI",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "prevI_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R9"
+    },
+    {
+      "@type": "Property",
+      "name": "nextG_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R9"
+    },
+    {
+      "@type": "Property",
+      "name": "nextH_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R9"
+    },
+    {
+      "@type": "Property",
+      "name": "Order",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R9_Next_I;1",
+      "name": "R9_Next_I",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:I;1"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R9_Prev_I;1",
+      "name": "R9_Prev_I",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:I;1"
+    }
+  ]
+}

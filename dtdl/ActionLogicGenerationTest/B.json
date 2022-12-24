@@ -1,0 +1,66 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:B;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "B",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "B_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,PR2_B"
+    },
+    {
+      "@type": "Property",
+      "name": "A_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@R1"
+    },
+    {
+      "@type": "Property",
+      "name": "NumberOfC",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "Kind",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "displayName": "KindOfB",
+        "enumValues": [
+          {
+            "name": "Kind1",
+            "enumValue": "Kind1"
+          },
+          {
+            "name": "Kind2",
+            "enumValue": "Kind2"
+          },
+          {
+            "name": "Kind3",
+            "enumValue": "Kind3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "B_1_DoSome",
+      "displayName": "B1:DoSome",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R1_A;1",
+      "name": "R1_A",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:A;1"
+    }
+  ]
+}

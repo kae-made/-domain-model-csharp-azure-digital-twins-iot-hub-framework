@@ -1,0 +1,91 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:C;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "C",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "C_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,PR3_Successor_C,PR7_IsTargetOf_C"
+    },
+    {
+      "@type": "Property",
+      "name": "Number",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "B_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@R2"
+    },
+    {
+      "@type": "Property",
+      "name": "Successor_C_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@R3"
+    },
+    {
+      "@type": "Property",
+      "name": "CreatedTime",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "current_state",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "C_1_Create",
+      "displayName": "C1:Create",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "b_id",
+            "schema": "string"
+          },
+          {
+            "name": "s_id",
+            "schema": "string"
+          },
+          {
+            "name": "C_1_Create_occurred",
+            "description": "The timestamp when this telemetry occurres",
+            "schema": "dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "C_2_Done",
+      "displayName": "C2:Done",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R2_B;1",
+      "name": "R2_B",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:B;1"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R3_Successor_C;1",
+      "name": "R3_Successor_C",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:C;1"
+    }
+  ]
+}

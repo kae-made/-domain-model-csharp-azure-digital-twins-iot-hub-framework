@@ -1,0 +1,55 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:D;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "D",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "D_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,PR5_D"
+    },
+    {
+      "@type": "Property",
+      "name": "A_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@R4"
+    },
+    {
+      "@type": "Property",
+      "name": "ComplexValue",
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "displayName": "ComplexData",
+        "fields": [
+          {
+            "name": "X",
+            "schema": "integer"
+          },
+          {
+            "name": "Y",
+            "schema": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "RealValue",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R4_A;1",
+      "name": "R4_A",
+      "maxMultiplicity": 1,
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:A;1"
+    }
+  ]
+}

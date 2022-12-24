@@ -1,0 +1,35 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "R",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "D_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R5"
+    },
+    {
+      "@type": "Property",
+      "name": "S_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,R5"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R5_D;1",
+      "name": "R5_D",
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:D;1"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R5_S;1",
+      "name": "R5_S",
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:S;1"
+    }
+  ]
+}

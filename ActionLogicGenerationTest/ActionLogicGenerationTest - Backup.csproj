@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kae.DomainModel.Csharp.Framework" Version="7.7.0" />
+    <PackageReference Include="Kae.DomainModel.Csharp.Framework.ExternalEntity" Version="2.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Kae.DomainModel.Csharp.Framework.Adaptor" Version="1.11.0" />
+    <PackageReference Include="Kae.DomainModel.Csharp.Framework.Adaptor.ExternalStorage.AzureDigitalTwins" Version="2.4.0" />
+  </ItemGroup>
+
+</Project>

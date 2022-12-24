@@ -1,0 +1,16 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:S;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "S",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "S_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,PR5_S,PR6FromCX,PR6FromCY"
+    }
+  ]
+}

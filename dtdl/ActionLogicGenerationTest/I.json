@@ -1,0 +1,42 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:I;1",
+  "@type": "Interface",
+  "comment": "auto generated - generator version=1.0.0",
+  "displayName": "I",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "I_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I0,PR9_Next_I"
+    },
+    {
+      "@type": "Property",
+      "name": "leftG_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I1,PR9_Prev_I,R8"
+    },
+    {
+      "@type": "Property",
+      "name": "rightH_ID",
+      "writable": true,
+      "schema": "string",
+      "comment": "@I1,PR9_Prev_I,R8"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R8_Left_G;1",
+      "name": "R8_Left_G",
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:G;1"
+    },
+    {
+      "@type": "Relationship",
+      "@id": "dtmi:com:kae_made:ActionLogicGenerationTest:R8_Right_H;1",
+      "name": "R8_Right_H",
+      "target": "dtmi:com:kae_made:ActionLogicGenerationTest:H;1"
+    }
+  ]
+}
