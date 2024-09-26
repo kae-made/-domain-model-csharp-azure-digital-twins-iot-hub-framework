@@ -1,3 +1,5 @@
+# Deprecated
+prease use https://github.com/kae-made/domain-model-csharp-azure-digital-twins-iot-hub-framework
 # Domain Model C# framework for Azure Digital Twins and Azure IoT Hub
 1. clone this repository
 2. Generate Domain Model C# code library by https://github.com/kae-made/domainmodel-code-generator-csharp into cloned folder.
